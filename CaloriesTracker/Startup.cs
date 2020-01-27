@@ -62,12 +62,8 @@ namespace CaloriesTracker
                 app.UseDeveloperExceptionPage();
             }
             app.UseCors("EnableCORS");
-
-
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthentication();
             app.UseAuthorization();
 
