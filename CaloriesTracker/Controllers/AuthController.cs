@@ -33,7 +33,7 @@ namespace CaloriesTracker.Controllers
             bool isAuthenticated = User.Identity.IsAuthenticated;
             if (isAuthenticated)
                 return Ok(User.Identity.Name);
-            else return Ok("Not Logged In");
+            else return BadRequest("Not Logged In");
         }
 
         [HttpPost("register")]
